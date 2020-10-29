@@ -1,0 +1,93 @@
+{
+  "name": "materializer",
+  "version": "1.0.0",
+  "description": "Using Material-UI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "sass": "sass public/styles.sass public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunCYang/materializer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YunCYang/materializer/issues"
+  },
+  "homepage": "https://github.com/YunCYang/materializer#readme",
+  "eslintIgnore": [
+    "public/main.js"
+  ],
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "plugin:react/recommended",
+      "eslint:recommended",
+      "standard"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "padded-blocks": 0,
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ],
+      "curly": [
+        "error",
+        "multi-line"
+      ],
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "always",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ],
+      "react/prop-types": 0
+    }
+  },
+  "dependencies": {
+    "@material-ui/core": "4.11.0",
+    "@material-ui/icons": "4.9.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "1.27.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "7.12.1",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.1.0",
+    "eslint": "7.12.1",
+    "eslint-config-standard": "15.0.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-standard": "4.0.2",
+    "webpack": "5.3.1",
+    "webpack-cli": "4.1.0"
+  }
+}
